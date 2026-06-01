@@ -3,81 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Menu - Interactive Web Page</title>
+    <title>3D Menu - Immersive Web Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to 3D Menu</h1>
-            <p>Explore our interactive 3D navigation experience</p>
-        </header>
+    <!-- 3D Background Scene -->
+    <div class="scene-background">
+        <div class="floating-cube" style="--delay: 0s"></div>
+        <div class="floating-cube" style="--delay: 1s"></div>
+        <div class="floating-cube" style="--delay: 2s"></div>
+        <div class="floating-cube" style="--delay: 3s"></div>
+        <div class="floating-cube" style="--delay: 4s"></div>
+    </div>
 
-        <!-- 3D Menu -->
-        <nav class="menu-3d">
-            <div class="menu-wrapper">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a href="#home">
-                            <span class="menu-text">Home</span>
-                            <span class="menu-icon">🏠</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#about">
-                            <span class="menu-text">About</span>
-                            <span class="menu-icon">ℹ️</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#services">
-                            <span class="menu-text">Services</span>
-                            <span class="menu-icon">⚙️</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#portfolio">
-                            <span class="menu-text">Portfolio</span>
-                            <span class="menu-icon">🎨</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#contact">
-                            <span class="menu-text">Contact</span>
-                            <span class="menu-icon">📧</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <!-- 3D Perspective Container -->
+    <div class="perspective-wrapper">
+        <div class="container">
+            <!-- 3D Header -->
+            <header class="header-3d">
+                <div class="header-content">
+                    <h1 class="title-3d">Welcome to 3D World</h1>
+                    <p class="subtitle-3d">Immersive Interactive Experience</p>
+                </div>
+                <div class="header-decorations">
+                    <div class="geometric-shape shape-1"></div>
+                    <div class="geometric-shape shape-2"></div>
+                    <div class="geometric-shape shape-3"></div>
+                </div>
+            </header>
 
-        <!-- Content Sections -->
-        <main class="content">
-            <section id="home" class="section">
-                <h2>Home</h2>
-                <p>Welcome to our 3D menu experience. This interactive menu demonstrates modern CSS 3D transforms and animations. Hover over the menu items to see the 3D effect in action!</p>
-            </section>
+            <!-- 3D Menu Navigation -->
+            <nav class="menu-3d">
+                <div class="menu-wrapper">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#home">
+                                <span class="menu-text">Home</span>
+                                <span class="menu-icon">🏠</span>
+                                <div class="menu-glow"></div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#about">
+                                <span class="menu-text">About</span>
+                                <span class="menu-icon">ℹ️</span>
+                                <div class="menu-glow"></div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#services">
+                                <span class="menu-text">Services</span>
+                                <span class="menu-icon">⚙️</span>
+                                <div class="menu-glow"></div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#portfolio">
+                                <span class="menu-text">Portfolio</span>
+                                <span class="menu-icon">🎨</span>
+                                <div class="menu-glow"></div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contact">
+                                <span class="menu-text">Contact</span>
+                                <span class="menu-icon">📧</span>
+                                <div class="menu-glow"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-            <section id="about" class="section">
-                <h2>About</h2>
-                <p>This page showcases advanced CSS 3D perspective effects combined with smooth animations. Each menu item has depth, rotation, and scaling effects that respond to user interaction.</p>
-            </section>
+            <!-- 3D Content Sections -->
+            <main class="content-3d">
+                <section id="home" class="section section-active">
+                    <div class="section-card">
+                        <div class="card-inner">
+                            <h2>Welcome to 3D Experience</h2>
+                            <p>This entire webpage is built with immersive 3D effects. Every element has depth, perspective, and interactive animations.</p>
+                            <div class="content-box">
+                                <div class="box-element element-1">3D Content</div>
+                                <div class="box-element element-2">Interactive</div>
+                                <div class="box-element element-3">Dynamic</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section id="services" class="section">
-                <h2>Services</h2>
-                <p>Our services include web design, 3D visualization, interactive experiences, and modern UI/UX implementation. We create engaging digital experiences using cutting-edge web technologies.</p>
-            </section>
+                <section id="about" class="section">
+                    <div class="section-card">
+                        <div class="card-inner">
+                            <h2>About This Project</h2>
+                            <p>Explore advanced CSS 3D transforms with full-page immersion. The entire interface uses perspective, parallax effects, and 3D animations.</p>
+                            <div class="features-grid">
+                                <div class="feature-card" style="--delay: 0s">
+                                    <div class="feature-icon">🎯</div>
+                                    <h3>Focused Design</h3>
+                                    <p>Every pixel serves a purpose</p>
+                                </div>
+                                <div class="feature-card" style="--delay: 0.1s">
+                                    <div class="feature-icon">✨</div>
+                                    <h3>Visual Effects</h3>
+                                    <p>Stunning 3D animations</p>
+                                </div>
+                                <div class="feature-card" style="--delay: 0.2s">
+                                    <div class="feature-icon">⚡</div>
+                                    <h3>Performance</h3>
+                                    <p>Smooth 60fps experience</p>
+                                </div>
+                                <div class="feature-card" style="--delay: 0.3s">
+                                    <div class="feature-icon">🎨</div>
+                                    <h3>Modern Design</h3>
+                                    <p>Contemporary aesthetics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section id="portfolio" class="section">
-                <h2>Portfolio</h2>
-                <p>Explore our portfolio of projects featuring 3D effects, interactive menus, and modern web applications. Each project demonstrates our commitment to innovation and user experience.</p>
-            </section>
+                <section id="services" class="section">
+                    <div class="section-card">
+                        <div class="card-inner">
+                            <h2>Our Services</h2>
+                            <p>Premium 3D web experiences designed to captivate and engage.</p>
+                            <div class="services-container">
+                                <div class="service-item">
+                                    <div class="service-header">3D Design</div>
+                                    <div class="service-content">
+                                        <p>Custom 3D visual effects tailored to your brand</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-header">Interactive UI</div>
+                                    <div class="service-content">
+                                        <p>Engaging user interfaces with depth perception</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-header">Animation</div>
+                                    <div class="service-content">
+                                        <p>Smooth, optimized animations for all devices</p>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="service-header">Optimization</div>
+                                    <div class="service-content">
+                                        <p>Performance-first 3D experiences</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section id="contact" class="section">
-                <h2>Contact</h2>
-                <p>Get in touch with us! Whether you have questions or want to collaborate, we'd love to hear from you. Contact us through our website or reach out directly.</p>
-            </section>
-        </main>
+                <section id="portfolio" class="section">
+                    <div class="section-card">
+                        <div class="card-inner">
+                            <h2>Portfolio Showcase</h2>
+                            <p>Explore our collection of immersive 3D projects.</p>
+                            <div class="portfolio-grid">
+                                <div class="portfolio-item" style="--delay: 0s">
+                                    <div class="portfolio-image">Project 1</div>
+                                    <h3>3D Interface</h3>
+                                </div>
+                                <div class="portfolio-item" style="--delay: 0.1s">
+                                    <div class="portfolio-image">Project 2</div>
+                                    <h3>Web Experience</h3>
+                                </div>
+                                <div class="portfolio-item" style="--delay: 0.2s">
+                                    <div class="portfolio-image">Project 3</div>
+                                    <h3>Interactive App</h3>
+                                </div>
+                                <div class="portfolio-item" style="--delay: 0.3s">
+                                    <div class="portfolio-image">Project 4</div>
+                                    <h3>3D Animation</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="section">
+                    <div class="section-card">
+                        <div class="card-inner">
+                            <h2>Get In Touch</h2>
+                            <p>Let's create something amazing together.</p>
+                            <div class="contact-grid">
+                                <div class="contact-item">
+                                    <div class="contact-icon">📧</div>
+                                    <h3>Email</h3>
+                                    <p>hello@3dexperience.com</p>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">📱</div>
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">🌐</div>
+                                    <h3>Website</h3>
+                                    <p>www.3dexperience.com</p>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">📍</div>
+                                    <h3>Location</h3>
+                                    <p>San Francisco, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- 3D Footer -->
+            <footer class="footer-3d">
+                <p>&copy; 2026 3D Experience. All rights reserved.</p>
+                <div class="footer-glow"></div>
+            </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>
