@@ -7,14 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- 3D Background Scene -->
-    <div class="scene-background">
-        <div class="floating-cube" style="--delay: 0s"></div>
-        <div class="floating-cube" style="--delay: 1s"></div>
-        <div class="floating-cube" style="--delay: 2s"></div>
-        <div class="floating-cube" style="--delay: 3s"></div>
-        <div class="floating-cube" style="--delay: 4s"></div>
-    </div>
+    <!-- WebGL 3D Scene (Three.js) -->
+    <canvas id="webgl-scene"></canvas>
 
     <!-- 3D Perspective Container -->
     <div class="perspective-wrapper">
@@ -32,46 +26,10 @@
                 </div>
             </header>
 
-            <!-- 3D Menu Navigation -->
+            <!-- True 3D Menu (WebGL carousel) -->
             <nav class="menu-3d">
-                <div class="menu-wrapper">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="#home">
-                                <span class="menu-text">Home</span>
-                                <span class="menu-icon">🏠</span>
-                                <div class="menu-glow"></div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#about">
-                                <span class="menu-text">About</span>
-                                <span class="menu-icon">ℹ️</span>
-                                <div class="menu-glow"></div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#services">
-                                <span class="menu-text">Services</span>
-                                <span class="menu-icon">⚙️</span>
-                                <div class="menu-glow"></div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#portfolio">
-                                <span class="menu-text">Portfolio</span>
-                                <span class="menu-icon">🎨</span>
-                                <div class="menu-glow"></div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#contact">
-                                <span class="menu-text">Contact</span>
-                                <span class="menu-icon">📧</span>
-                                <div class="menu-glow"></div>
-                            </a>
-                        </li>
-                    </ul>
+                <div id="menu3d-viewport" aria-label="3D menu carousel">
+                    <p class="menu3d-hint">Drag to spin &middot; click a panel to navigate</p>
                 </div>
             </nav>
 
@@ -224,6 +182,13 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
